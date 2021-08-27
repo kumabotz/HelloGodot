@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://SayHello.gd" type="Script" id=1]
+[ext_resource path="res://ProcessDelta.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 121.0
+margin_bottom = 79.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FPSLabel" type="Label" parent="Panel"]
+margin_left = 0.477875
+margin_top = 0.0568619
+margin_right = 22.4779
+margin_bottom = 14.0569
+text = "FPS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FPSValue" type="Label" parent="Panel"]
+margin_left = 24.5962
+margin_top = -0.420498
+margin_right = 111.596
+margin_bottom = 13.5795
+text = "0"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel"]
+margin_left = 13.6646
+margin_top = 38.471
+margin_right = 84.6646
+margin_bottom = 58.471
+text = "Press Me"
+
+[connection signal="pressed" from="Panel/Button" to="Panel" method="_on_Button_pressed"]

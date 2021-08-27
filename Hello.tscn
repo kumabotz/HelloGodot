@@ -1,6 +1,28 @@
 [gd_scene format=2]
 
-[node name="Label" type="Label"]
-margin_right = 40.0
-margin_bottom = 14.0
-text = "Hello World"
+[node name="Panel" type="Panel"]
+margin_right = 155.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 30.4825
+margin_top = 35.5279
+margin_right = 117.482
+margin_bottom = 49.5279
+text = "This is a label"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 36.3688
+margin_top = 70.8455
+margin_right = 107.369
+margin_bottom = 90.8455
+text = "Press Me"
+__meta__ = {
+"_edit_use_anchors_": false
+}
